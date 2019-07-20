@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  console.log(process.env.REACT_APP_API_KEY, '2323')
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={()=> console.log(process.env.REACT_APP_MB_ID,process.env.REACT_APP_MB_API_KEY)}>
+          ???????
+        </button>
       </header>
     </div>
   );
